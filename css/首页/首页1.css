@@ -1,0 +1,59 @@
+.main{
+    /* 设定了表格中标题项的格式以及颜色 */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: cyan;
+}
+
+.titlestyle{
+    /* 设置了标题字体的大小以及颜色 */
+    font-size: 100px;
+    font-family: var(#fff);
+}
+
+.contentstyle1{
+    /* 主体部分的各个属性设置 */
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aqua;
+    font-weight: 600;
+}
+
+
+body{
+    /* 设置表格周围的背景颜色使用了渐变色 */
+    background-image:linear-gradient(to right,#d56d80,hsl(349, 84%, 80%),#ffbdc9)
+
+}
+thead{
+    color: gold;
+}
+a.button {
+
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    
+    }
+a.button:hover{
+        cursor: crosshair;
+        /* 光标成十字线  */
+        background-color: rgb(245, 245, 2);
+    }
+
+    
+    #footer {
+        position: absolute;
+        /* top: 0; */
+        width: 100%;
+        height: 20px;/*脚部的高度*/
+        background: rgb(201, 205, 206);
+        clear:both;
+        margin: 10px 10px 10px 10px;
+        text-align: center;
+}

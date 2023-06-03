@@ -1,0 +1,106 @@
+<!-- 采用的是页眉，中间内容，页脚，三块式布局 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\表单\观后调查.css">
+    <link href="css\漫漫上学路\school.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="我的家乡.html">快乐老家</a></li>
+                    <li><a href="漫漫上学路.html">查查学历</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>对于littlesix的个人主页的满意度调查</h1>
+        <h2>不会泄露您的个人信息，请如实填写表单，填写完毕后会转到百度百科陕西省，欢迎进一步了解我的家乡</h2>
+    <!-- 填写完表单后选择提交之后就会返回以下这个网址 -->
+        <form action="https://baike.baidu.com/item/%E9%99%95%E8%A5%BF%E7%9C%81/19657132?fromtitle=%E9%99%95%E8%A5%BF&fromid=193811&fr=aladdin" method="post">
+        <div class="tableRow">
+            <p>
+            选择你的身份:
+            </p>
+            <p>
+                <!-- value标签下的就是下拉列表中的值假如value没有值的话那么就会自动填入<option ></option>之间的值 -->
+                <select name="identity">
+                <option value="">小学同学</option>
+                <option value="">初中同学</option>
+                <option value="">高中同学</option>
+                <option value="">大学同学</option>
+                </select>
+            </p>
+        </div>
+        <div class="tableRow">
+            <p> 性别 </p>
+            <p>
+                <input type="radio" name="beantype" value=""> 男<br>
+                <input type="radio" name="beantype" value="" checked> 
+                女
+            </p>
+        </div>
+        <div class="tableRow">
+            <p>你对本网页的满意程度1-100 </p>
+            <p> <input type="number" name="bags" min="1" max="100"> </p>
+        </div>
+        <div class="tableRow label">
+            <p> 浏览本页面的时间 </p>
+            <p> <input type="date" name="date"> </p>
+        </div>
+        <div class="tableRow">
+            <p>是否完整的浏览了页面 </p>
+            <p>
+                <input type="checkbox" name="extras[]" value="giftwrap"> 浏览了一部分<br>
+                <input type="checkbox" name="extras[]" value="catalog" checked>
+                完全浏览了
+            </p>
+        </div>
+        <div class="tableRow">
+            <p class="heading"> 细节调研 </p>
+            <p></p>
+        </div>
+        <div class="tableRow">
+            <p> 画面:</p>
+            <p> <input type="text" name="画面" value="" placeholder="画面很美" required> </p>
+        </div>
+        <div class="tableRow">
+            <p> 美术: </p>
+            <p> <input type="text" name="美术" value="" placeholder="美术效果很吸引人" required> </p>
+        </div>
+        <div class="tableRow">
+            <p> 文字: </p>
+            <p> <input type="text" name="文字" value="" placeholder="文字很生动" required> </p>
+        </div>
+        <div class="tableRow">
+            <p> 格式: </p>
+            <p> <input type="text" name="格式" value="" placeholder="格式很新颖" required> </p>
+        </div>
+        <div class="tableRow">
+            <p> 颜色: </p>
+            <p> <input type="text" name="颜色" value="" placeholder="颜色很讨喜" required> </p>
+        </div>
+        <div class="tableRow">
+            <p> 联系方式 </p>
+            <p> <input type="tel" name="联系方式" value="" placeholder="15389179651" required> </p>
+        </div>
+        <div class="tableRow">
+            <p> 更多建议 </p>
+            <p>
+                <textarea name="reader"></textarea>
+            </p>
+        </div>
+        <div class="tableRow">
+            <p></p>
+            <p> <input type="submit" value="提交"> </p>
+        </div>
+        </form>
+        <div id="container1">
+            <div id="footer">我也是有底线的！@2023by &nbsp;&nbsp;littlesix</div>
+</body>

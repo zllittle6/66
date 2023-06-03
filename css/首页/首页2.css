@@ -1,0 +1,47 @@
+#box {
+    /* 设置盒子内部的格式 */
+    margin: auto; 
+    height: 400px;
+    width: 48.5%;
+    text-align: center;
+    border: 2px solid hsl(349, 84%, 80%);
+    box-shadow: 0 25px 20px -20px rgba(0,0,0,0.4);
+    background-image:linear-gradient(to left, #3cbdec, #5fc8ee, #a0e2fa)
+}
+
+
+label{
+    /* 设置了表格中的三个点击按钮的基础属性 */
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 30%;
+}
+.content div{
+    /* 设置了文本的展示形式将暂时不用展示的文本隐藏起来 */
+    display: none;
+}
+.content{
+    width: 100%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked+label {
+    /* 设置鼠标点击之后的颜色 */
+    background-color: skyblue;
+    color: white;
+}
+
+input[type="radio"]:checked+label+div {
+    display: block;
+}
+/* 选择之后就能跳转页面 */
+#nav1:checked~.content>#page1,
+#nav2:checked~.content>#page2,
+#nav3:checked~.content>#page3 {
+    display: block;
+}

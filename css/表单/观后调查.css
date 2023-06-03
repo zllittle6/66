@@ -1,0 +1,48 @@
+form {
+	/* 设置整体的格式 */
+	display: table;
+	padding: 10px;
+	border: thin dotted #0d10ec;
+
+}
+h1,h2{
+	color: aliceblue;
+}
+form textarea {
+	/* 设置最后的文本框的大小 */
+	width: 500px;
+	height: 200px;
+}
+
+div.tableRow {
+	/* 设置选项的展示形式 */
+	display: table-row;
+}
+
+div.tableRow p {
+	/* 设置每一个元素的之间的间隔和展示的位置 */
+	display: table-cell;
+	vertical-align: top;
+	padding: 3px;
+}
+    
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 20px;/*脚部的高度*/
+	background: rgb(201, 205, 206);
+	clear:both;
+	margin: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+div#tableContainer {
+	display: table;
+	border-spacing: 10px;
+}
+
+div#tableRow {
+   /* 所有表格元素都有一个等价于 CSS  display 属性的值 */
+	display: table-row;
+}
